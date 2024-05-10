@@ -15,7 +15,7 @@ class Stack {
 private:
     Node* top;
 public:
-    Stack(){
+    Stack() {
         top = NULL;
     }
 
@@ -39,7 +39,7 @@ public:
         if (top == NULL) {
             cout << "List is empty." << endl;
         }
-    
+
         else {
             Node* current = top;
             while (current != NULL) {
@@ -48,5 +48,10 @@ public:
             }
             cout << endl;
         }
+    }
+    bool isEmpty() {
+        return top == NULL;
+    }
 
+};
 
