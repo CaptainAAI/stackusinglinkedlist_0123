@@ -7,3 +7,6 @@ public:
     Node* next;
 
     Node() {
+        next = NULL;
+    }
+};
